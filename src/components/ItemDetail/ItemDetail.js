@@ -1,13 +1,17 @@
-import React from "react";
-import { useParams } from "react-router-dom";
+// import Item from "../Item/Item";
+import "../Item/cards.css";
 
-const ItemDetail = () => {
-  const { detalleId } = useParams();
+const ItemDetail = ({ producto }) => {
   return (
-    <div>
-      ItemDetail
-      {console.log(detalleId)}
-      {console.log(typeof detalleId)}
+    <div className="productos">
+      {console.log(producto)}
+      <img src={producto.img} alt="imagen producto" />
+      <div className="texto-producto">
+        <h3>{producto.name} </h3>
+        <p className="precio">Precio:{producto.price}</p>
+        <p>Descripcion: {producto.description}</p>
+        <p>Nos quedan solo {producto.stock}, aprovecha!</p>
+      </div>
     </div>
   );
 };

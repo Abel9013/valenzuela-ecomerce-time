@@ -1,6 +1,6 @@
 export const stock = [
   {
-    id: 1,
+    id: "1",
     name: "Poco ",
     img: "https://http2.mlstatic.com/D_NQ_NP_2X_774637-MLA46481220836_062021-F.webphttps://http2.mlstatic.com/D_NQ_NP_2X_917772-MLA46164931649_052021-F.webp",
     description: "ergregergerg",
@@ -9,16 +9,16 @@ export const stock = [
     category: "phone",
   },
   {
-    id: 2,
+    id: "2",
     name: "Poco",
     img: "https://http2.mlstatic.com/D_NQ_NP_2X_774637-MLA46481220836_062021-F.webphttps://http2.mlstatic.com/D_NQ_NP_2X_917772-MLA46164931649_052021-F.webp",
     description: "ergregergerg",
-    stock: 5,
+    stock: "5",
     price: 6000,
     category: "phone",
   },
   {
-    id: 3,
+    id: "3",
     name: "miBand 3",
     img: "https://http2.mlstatic.com/D_NQ_NP_2X_917772-MLA46164931649_052021-F.webp",
     description: "ergregergerg",
@@ -27,7 +27,7 @@ export const stock = [
     category: "smartband",
   },
   {
-    id: 4,
+    id: "4",
     name: "miBand 4 ",
     img: "https://http2.mlstatic.com/D_NQ_NP_2X_917772-MLA46164931649_052021-F.webp",
     description: "ergregergerg",
@@ -36,7 +36,7 @@ export const stock = [
     category: "smartband",
   },
   {
-    id: 5,
+    id: "5",
     name: "miBand 5 ",
     img: "https://http2.mlstatic.com/D_NQ_NP_2X_917772-MLA46164931649_052021-F.webp",
     description: "ergregergerg",
@@ -45,7 +45,7 @@ export const stock = [
     category: "smartband",
   },
   {
-    id: 6,
+    id: "6",
     name: "miBand 6",
     img: "https://http2.mlstatic.com/D_NQ_NP_2X_917772-MLA46164931649_052021-F.webp",
     description: "ergregergerg",
