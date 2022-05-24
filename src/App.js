@@ -6,7 +6,7 @@ import ItemCount from "./components/ItemCount/ItemCount";
 import NavBar from "./components/NavBar/NavBar";
 import React from "react";
 import Cart from "./components/Cart/Cart";
-import ItemDetail from "./components/ItemDetail/ItemDetail";
+// import ItemDetail from "./components/ItemDetail/ItemDetail";
 import ItemDetailContainer from "./components/Containers/ItemDetailContainer";
 
 // import Normalize from "react-normalize";
@@ -19,6 +19,10 @@ function App() {
         <Routes>
           <Route
             path="/"
+            element={<ItemListContainer greeting="Hey wazappp" />}
+          />
+          <Route
+            path="/category/:id"
             element={<ItemListContainer greeting="Hey wazappp" />}
           />
           <Route path="/count" element={<ItemCount stock={5} initial={0} />} />

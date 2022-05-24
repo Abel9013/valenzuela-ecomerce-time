@@ -24,7 +24,7 @@ export const stock = [
     description: "ergregergerg",
     stock: 5,
     price: 6000,
-    category: "smartband",
+    category: "smartbands",
   },
   {
     id: "4",
@@ -33,7 +33,7 @@ export const stock = [
     description: "ergregergerg",
     stock: 5,
     price: 6000,
-    category: "smartband",
+    category: "smartbands",
   },
   {
     id: "5",
@@ -42,7 +42,7 @@ export const stock = [
     description: "ergregergerg",
     stock: 5,
     price: 6000,
-    category: "smartband",
+    category: "smartbands",
   },
   {
     id: "6",
@@ -51,6 +51,6 @@ export const stock = [
     description: "ergregergerg",
     stock: 5,
     price: 6000,
-    category: "smartband",
+    category: "smartbands",
   },
 ];
