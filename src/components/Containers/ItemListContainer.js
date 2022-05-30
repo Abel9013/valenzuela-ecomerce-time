@@ -7,7 +7,7 @@ export const ItemListContainer = (prop) => {
   const [items, setItems] = useState([]); //Aca guardo mis productos
   const [loading, setLoading] = useState(false); //Para mostrar el cargando...
   const { id } = useParams();
-  console.log(`Mi categoria es: ${id}`);
+  // console.log(`Mi categoria es: ${id}`);
   useEffect(() => {
     setLoading(true); //cambio el valor para no mostrar el 'cargando...'
     if (id) {

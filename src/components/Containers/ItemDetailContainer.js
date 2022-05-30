@@ -10,7 +10,7 @@ const ItemDetailContainer = () => {
   const [producto, setProducto] = useState({});
   const { detalleId } = useParams();
 
-  console.log(`este es el recien capturado ${detalleId}`);
+  // console.log(`este es el recien capturado ${detalleId}`);
   useEffect(
     () => {
       // listarProductos(detalleId) // fetch llamada a una api
@@ -22,7 +22,7 @@ const ItemDetailContainer = () => {
     [detalleId],
     []
   );
-  console.log(`Mi producto es ${producto}`);
+  // console.log(`Mi producto es ${producto}`);
   return (
     <div>
       ItemDetailContainer

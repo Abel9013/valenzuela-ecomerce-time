@@ -10,9 +10,9 @@ export const listarProductos = (stock) => {
 export const getFetch = (id) => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      console.log(`Este es mi id: ${id} y es un ${typeof id}`);
+      // console.log(`Este es mi id: ${id} y es un ${typeof id}`);
       const query = id ? stock.find((producto) => producto.id === id) : stock;
-      console.log(`Mi promesa: ${query}`);
+      // console.log(`Mi promesa: ${query}`);
       resolve(query);
     }, 2000);
   });
