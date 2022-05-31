@@ -6,20 +6,26 @@ const CartContextProvider = ({ children }) => {
   //A la vez enmascaro mi cartcontextProvider
   const [cartList, setCartList] = useState([]);
 
-  function addToCart(item) {
-    setCartList([...cartList, item]);
+  // function addToCart( item ) {
+  //   setCartList([...cartList, item]);
+  // }
+  function addToCart(item, quantity) {
+    const newItem = { ...item, quantity };
+    setCartList([...cartList, newItem]);
+    console.log(cartList);
   }
 
   return (
     <CartContext.Provider
       value={{
         //  Estados arriba, funciones abajo
+        //Aca pongo mis variables globales
         cartList,
         addToCart,
         //  setCartList
       }}
     >
-      {children}
+      {children /* aca estoy desestructurando children que veien en las prop */}
     </CartContext.Provider>
   );
 };

@@ -13,6 +13,10 @@ img{
     width: 400px;
     border: 2px solid #000;
 }
+.productos p{
+    /* padding:0; */
+    margin: 0;
+}
 @media (min-width: 768px) { 
     .productos{
         /* margin-bottom: 0; */
@@ -23,17 +27,23 @@ img{
 .texto-producto{
      color: #000;
     text-align: center;
-    padding: 20px;
+    /* padding: 20px; */
 }
 .texto-producto h3{
+    margin-top: 5px;
+    line-height: 1;
+}
+.cont{
+    padding: 0;
     margin: 0;
 }
-.texto-producto p{
+/* .texto-producto p{
     margin: 0 0 0.5rem 0;
-}
+} */
 .texto-producto .precio{
     font-size: 20px;
     font-weight: 900;
+    line-height: 1;
 }
 @media (min-width: 768px) { 
     .listado-productos{

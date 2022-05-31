@@ -4,6 +4,14 @@
     background-color: #1E1014;
     color: #E4D9FF;
 }
-.cont {
-    padding-left: 15px;
+.counter{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
 }
+.counter .btn{
+    margin: 5px;
+}
+/* .cont {
+    padding-left: 15px;
+} */

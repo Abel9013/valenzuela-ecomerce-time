@@ -25,7 +25,7 @@ const ItemDetailContainer = () => {
   // console.log(`Mi producto es ${producto}`);
   return (
     <div>
-      ItemDetailContainer
+      {/* ItemDetailContainer */}
       <div>
         <ItemDetail producto={producto} />
       </div>
