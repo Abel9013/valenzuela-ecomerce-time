@@ -20,7 +20,7 @@ const NavBar = () => {
             </div>
             <div className="header__logo">
               <Link to="/cart">
-                {qtyTotal()}
+                {qtyTotal() !== 0 && qtyTotal()}
                 <img src={carry} alt="cart" />
               </Link>
             </div>

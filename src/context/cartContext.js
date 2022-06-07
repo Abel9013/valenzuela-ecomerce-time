@@ -28,7 +28,7 @@ const CartContextProvider = ({ children }) => {
   };
   const totalPrice = () => {
     return cartList.reduce(
-      (counter, prod) => counter + prod.cuantity * prod.price,
+      (counter, prod) => counter + prod.quantity * prod.price,
       0
     );
   };
