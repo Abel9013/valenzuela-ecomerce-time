@@ -3,10 +3,12 @@ import { NavLink, Link } from "react-router-dom";
 // import CartContext from "../../context/CartContext";
 import { CartWidget } from "../CartWidget/CartWidget";
 // import { CartWidget } from "./CartWidget";
+import { useCartContext } from "../../context/CartContext";
 import "./NavBar.css";
 import carry from "../img/shopping-cart white.svg";
 // import "./components/navbar.css";
 const NavBar = () => {
+  const { qtyTotal } = useCartContext();
   return (
     <>
       <header className="header">
@@ -18,7 +20,8 @@ const NavBar = () => {
             </div>
             <div className="header__logo">
               <Link to="/cart">
-                <img src={carry} alt="carrito" />
+                {qtyTotal()}
+                <img src={carry} alt="cart" />
               </Link>
             </div>
 

@@ -1,16 +1,12 @@
-// import Item from "../Item/Item";
-// import { useContext } from "react";
-// import { CartContext } from "../../context/CartContext";
-// import { useCartContext } from "../../context/CartContext";
 import "../Item/cards.css";
 import ItemCount from "../ItemCount/ItemCount";
 import { useCartContext } from "../../context/CartContext";
 
 const ItemDetail = ({ producto }) => {
   const { cartList, addToCart } = useCartContext();
-  const onAdd = (cant) => {
-    console.log(cant);
-    addToCart({ ...producto, quantity: cant });
+  const onAdd = (item, count) => {
+    console.log(`este es ${count} y es ${typeof count}`);
+    addToCart({ ...producto, quantity: count });
   };
   console.log(cartList);
   return (
@@ -21,9 +17,8 @@ const ItemDetail = ({ producto }) => {
         <h3>{producto.name} </h3>
         <p className="precio">Precio:{producto.price}</p>
         <p>Descripcion: {producto.description}</p>
-        <ItemCount item={producto} onAdd={addToCart} />
+        <ItemCount item={producto} onAdd={onAdd} />
         <p>Nos quedan solo {producto.stock}, aprovecha!</p>
-        {/* <button onClick={() => onAdd(4)}>Agregar al carrito</button> */}
       </div>
     </div>
   );

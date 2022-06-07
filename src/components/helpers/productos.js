@@ -1,7 +1,7 @@
 export const stock = [
   {
     id: "1",
-    name: "Poco ",
+    name: "Poco f3",
     img: "https://http2.mlstatic.com/D_NQ_NP_2X_774637-MLA46481220836_062021-F.webphttps://http2.mlstatic.com/D_NQ_NP_2X_917772-MLA46164931649_052021-F.webp",
     description: "ergregergerg",
     stock: 5,
@@ -10,7 +10,7 @@ export const stock = [
   },
   {
     id: "2",
-    name: "Poco",
+    name: "Poco f4",
     img: "https://http2.mlstatic.com/D_NQ_NP_2X_774637-MLA46481220836_062021-F.webphttps://http2.mlstatic.com/D_NQ_NP_2X_917772-MLA46164931649_052021-F.webp",
     description: "ergregergerg",
     stock: "5",
